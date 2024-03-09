@@ -1,0 +1,478 @@
+
+@font-face {
+    font-family: 'FuentePerros';
+    src: url('./fuente/ProtestRiot-Regular.ttf') format('truetype');
+}
+/* Media query para monitores con una anchura mínima de 1024px */
+@media screen and (min-width: 1024px) {
+body {
+    background-color: #3f4045;
+    font-family: 'FuentePerros', sans-serif;
+    margin:0px;
+    padding:0px;
+    overflow-x: hidden;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+}
+a {
+    text-decoration: none;
+}
+nav {
+    background-color: #f0fc65; 
+    position: fixed; 
+    width: 100%; 
+    top: 0;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    padding: 30px;
+    margin-bottom: 0px;
+}
+.navUl {
+    color: #000000;
+}
+nav ul li:hover {
+    color: orange; 
+}
+nav ul a:hover{
+    color: orange;
+}
+nav img{
+    width: 30px; 
+    height: auto; 
+    margin-right: 10px; 
+
+}
+
+h3{
+    color: #f0fc65;
+}
+
+
+.cabecera {
+    background-image: url(imagenes/perrobanner.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 20rem; 
+    text-align: center;
+    margin-top: 5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+}
+.cabecera:nth-child(n) h1{
+    padding-top: 100px;
+    font-size: 45px;
+    padding-bottom: 0;    
+}
+
+article {
+    border: 1px solid #f0fc65;
+    background-color: #2f2f31;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 20px;
+    color: white;
+    overflow: hidden; 
+}
+
+article img {
+    width: 20rem;
+    height: 20rem;
+    border: 4px solid orange;
+    border-radius: 2rem;
+    float: left; /* Hace que la imagen flote a la izquierda */
+    margin-right: 20px; 
+}
+
+article p {
+    margin-left: 120px;
+    margin-top: 120px;
+    margin-bottom: 5rem;
+}
+
+article h3 {
+    text-align: center;
+    font-style:italic;
+    
+}
+
+article a{
+    border: solid 2px orange;
+    border-radius: 1.5rem;
+    padding: 1rem;
+    background-color: #f0fc65;
+    color: #000000;
+    margin-left: 45rem;
+    
+}
+article a:hover{
+    color:orange;
+}
+.razas:nth-child(n) h2{
+    text-align: center;
+    font-size: 30px;
+    color:#f0fc65
+}
+.juguetes {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start; /* Ajusta la alineación vertical al principio */
+    flex-wrap: wrap;
+}
+
+.juguetes article {
+    max-width: 300px;
+    margin: 10px;
+    padding: 2rem;
+    
+}
+
+.juguetes article img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.juguetesPerro p {
+    margin-top: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.juguetesPerro{
+    background-color: #f0fc65;
+    color: orange;
+}
+
+.juguetesPerro h3{
+    color: orange;
+}
+
+.juguetesPerro a{
+    border: solid 1px orange;
+    color: black;
+}
+
+.h2juguete {
+    text-align: center;
+    color: #f0fc65;
+    margin-bottom: 20px; /* Ajusta el espacio entre el h2 y los artículos*/
+}
+footer{
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color: gray;
+}
+footer *{
+    text-align: center;
+    color: white;
+}
+footer h2{
+    color:white;
+    border: solid 4px white;
+    border-radius: 5rem;
+    background-color: black;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+.h3pie{
+    background-color: #000000;
+}
+
+
+
+#contacto,
+#redes-sociales {
+    width: 50%; /* Divide el footer en dos columnas iguales */
+    float: left; /* Hace que las columnas se alineen horizontalmente */
+    box-sizing: border-box;
+    padding-bottom: 1.5rem;
+    
+}
+
+#contacto {
+    border-right: 1px solid #ffffff; /* Agrega un borde entre las dos columnas */
+}
+#contacto a{
+    border: solid 2px white;
+    border-radius: 4rem;
+    padding: 0.5rem;
+    background-color: #000000;
+}
+#contacto a:hover{
+    color: orange;
+}
+
+#redes-sociales a {
+    display:flex;
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding-left: 4rem;
+    padding-top:1rem;
+}
+
+#redes-sociales a:hover {
+    color: orange; 
+}
+#redes-sociales img {
+    width: 20px;
+    height: 20px; 
+    margin-right: 2rem; 
+}
+}
+   
+/* Media query para tablets con una anchura mínima y máxima de 1024px */
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+    main div#contenido {
+        width: 700px;
+        margin: 0 auto; 
+        padding: 20px; 
+    }
+
+    footer .container {
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+    }
+}
+/*Media query para moviles con anchura de 480px*/
+@media screen and (min-width: 480px){
+    body {
+        background-color: #3f4045;
+        font-family: 'FuentePerros', sans-serif;
+        margin:0px;
+        padding:0px;
+        overflow-x: hidden;
+    }
+    
+    img{
+        width: 100px;
+        height: 100px;
+    }
+    a {
+        text-decoration: none;
+    }
+    nav {
+        background-color: #f0fc65; 
+        position: fixed; 
+        width: 100%; 
+        top: 0;
+    }
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        padding: 30px;
+        margin-bottom: 0px;
+    }
+    .navUl {
+        color: #000000;
+    }
+    nav ul li:hover {
+        color: orange; 
+    }
+    nav ul a:hover{
+        color: orange;
+    }
+    nav img{
+        width: 30px; 
+        height: auto; 
+        margin-right: 10px; 
+    
+    }
+    
+    h3{
+        color: #f0fc65;
+    }
+    
+    
+    .cabecera {
+        background-image: url(imagenes/perrobanner.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 100%;
+        height: 20rem; 
+        text-align: center;
+        margin-top: 5rem;
+        color: #ffffff;
+        text-shadow: 2px 2px #000000;
+    }
+    .cabecera:nth-child(n) h1{
+        padding-top: 100px;
+        font-size: 45px;
+        padding-bottom: 0;    
+    }
+    
+    article {
+        border: 1px solid #f0fc65;
+        background-color: #2f2f31;
+        border-radius: 10px;
+        padding: 1.5rem;
+        margin-bottom: 20px;
+        color: white;
+        overflow: hidden; 
+    }
+    
+    article img {
+        width: 20rem;
+        height: 20rem;
+        border: 4px solid orange;
+        border-radius: 2rem;
+        float: left; /* Hace que la imagen flote a la izquierda */
+        margin-right: 20px; 
+    }
+    
+    article p {
+        margin-left: 120px;
+        margin-top: 120px;
+        margin-bottom: 5rem;
+    }
+    
+    article h3 {
+        text-align: center;
+        font-style:italic;
+        
+    }
+    
+    article a{
+        border: solid 2px orange;
+        border-radius: 1.5rem;
+        padding: 1rem;
+        background-color: #f0fc65;
+        color: #000000;
+        margin-left: 45rem;
+        
+    }
+    article a:hover{
+        color:orange;
+    }
+    .razas:nth-child(n) h2{
+        text-align: center;
+        font-size: 30px;
+        color:#f0fc65
+    }
+    .juguetes {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start; /* Ajusta la alineación vertical al principio */
+        flex-wrap: wrap;
+    }
+    
+    .juguetes article {
+        max-width: 300px;
+        margin: 10px;
+        padding: 2rem;
+        
+    }
+    
+    .juguetes article img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    
+    .juguetesPerro p {
+        margin-top: 20px;
+        margin-left: 20px;
+        text-align: center;
+    }
+    
+    .juguetesPerro{
+        background-color: #f0fc65;
+        color: orange;
+    }
+    
+    .juguetesPerro h3{
+        color: orange;
+    }
+    
+    .juguetesPerro a{
+        border: solid 1px orange;
+        color: black;
+    }
+    
+    .h2juguete {
+        text-align: center;
+        color: #f0fc65;
+        margin-bottom: 20px; /* Ajusta el espacio entre el h2 y los artículos*/
+    }
+    footer{
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: gray;
+    }
+    footer *{
+        text-align: center;
+        color: white;
+    }
+    footer h2{
+        color:white;
+        border: solid 4px white;
+        border-radius: 5rem;
+        background-color: black;
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .h3pie{
+        background-color: #000000;
+    }
+    
+    
+    
+    #contacto,
+    #redes-sociales {
+        width: 50%; /* Divide el footer en dos columnas iguales */
+        float: left; /* Hace que las columnas se alineen horizontalmente */
+        box-sizing: border-box;
+        padding-bottom: 1.5rem;
+        
+    }
+    
+    
+    #contacto {
+        border-right: 1px solid #ffffff; /* Agrega un borde entre las dos columnas */
+    }
+    #contacto a{
+        border: solid 2px white;
+        border-radius: 4rem;
+        padding: 0.5rem;
+        background-color: #000000;
+    }
+    #contacto a:hover{
+        color: orange;
+    }
+    #redes-sociales a {
+        display:flex;
+        color: #ffffff;
+        text-decoration: none;
+        text-align: center;
+        padding-left: 4rem;
+        padding-top:1rem;
+    }
+    
+    #redes-sociales a:hover {
+        color: orange; 
+    }
+    #redes-sociales img {
+        width: 20px;
+        height: 20px; 
+        margin-right: 2rem; 
+    }
+}

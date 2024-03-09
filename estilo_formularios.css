@@ -1,0 +1,68 @@
+@font-face {
+    font-family: 'FuentePerros';
+    src: url('./fuente/ProtestRiot-Regular.ttf') format('truetype');
+}
+a {
+    text-decoration: none;
+}
+body {
+    background-color: #3f4045;
+    color: #f0fc65;
+    font-family: 'FuentePerros', sans-serif;
+}
+
+h1 {
+    color: #f0fc65;
+    text-align: center;
+}
+
+form {
+    background-color: #3f4045;
+    padding: 20px;
+    border: 2px solid #f0fc65;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    color: #f0fc65;
+}
+
+input, select, textarea {
+    background-color: #3f4045;
+    border: 2px solid #f0fc65;
+    border-radius: 5px;
+    color: #f0fc65;
+    padding: 8px;
+    margin-bottom: 10px;
+}
+
+input[type="submit"], input[type="reset"], button {
+    background-color: #f0fc65;
+    color: black;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+input[type="submit"]:hover{
+    color: orange;
+}
+input[type="reset"]:hover{
+    color: orange;
+}
+div{
+    border: solid 2px orange;
+    background-color: #f0fc65;
+    
+}
+div a{
+    color: black;
+}
+div a:hover{
+    color:orange;
+}
+
+

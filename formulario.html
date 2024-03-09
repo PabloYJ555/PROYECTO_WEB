@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios en HTML</title>
+    <link rel="shortcut icon" href="./imagenes/huella.webp" type="image/x-icon">
+    <link rel="stylesheet" href="estilo_formularios.css">
+</head>
+<body>
+    <h1>Registro para la adopción</h1>
+    <form action="mailto:pabloyanezjimenez@gmail.com" method="get">
+        <label for="nombre">Nombre: </label><input type="text" name="nombre" id="nombre" 
+        placeholder="Escribe tu nombre" required>
+        <br><br>
+        <label for="apellidos">Apellidos: </label><input type="text" name="apellidos" id="apellidos" placeholder="Escribe tus apellidos"
+        required>
+        <br><br>
+        <label for="email">Email: </label><input type="email" name="email" id="email" required pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$">
+        <br><br>
+        <label for="password">Contraseña: </label><input type="password" name="password" id="password" minlength="8" required>
+        <br><br>
+        <label for="edad">Edad: </label><input type="number" id="edad" min="18" max="100" required>
+        <br><br>
+        <label for="fecha">Fecha de nacimiento: </label><input type="date" name="fecha" id="fecha" required>
+        <br><br>
+        <label for="telefono">Teléfono</label><input type="tel" name="telefono" id="telefono" pattern="[0-9]{9}" required>
+        <br><br>
+        <fieldset>
+            <legend>Perro que quiere adoptar</legend>
+                <input type="radio" name="perro" value="staffy">Staffordshire Bull Terrier
+                <input type="radio" name="perro" value="akita">Akita Inu
+                <input type="radio" name="perro" value="pitbull">Pitbull
+                <input type="radio" name="perro" value="granD">Gran Danés
+                <input type="radio" name="perro" value="rottweiler">Rottweiler
+        </fieldset>
+        <br>
+        <label>¿Por qué le interesaría adoptar?</label>
+        <select name="estudios" id="estudios">
+            <optgroup label="Razones para adoptar">
+            <option value="soledad">Necesito un compañero que me haga compañía</option>
+            <option value="salvar">Puedo salvar la aburrida vida de un perro que no es adoptado</option>
+            <option value="otromotivo">Otro motivo (Especificar abajo)</option>
+            </optgroup>
+        </select>
+        <br><br>
+        <label>Cualquier otro motivo por el que me gustaría adoptar:</label>
+        <br>
+        <textarea name="datos"
+        id="datos" cols="50" rows="5"></textarea>
+        <br>
+        <datalist id="listagusto">
+            <option label="deportes" value="deportes">Deportes</option>
+            <option label="cine" value="cine">Cine</option>
+            <option label="teatro" value="teatro"></option>
+        </datalist>
+        <br><br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpiar">
+        <div class="Volver"><a href="index.html">Volver a la página principal</a></div>
+    </form>
+</body>
+</html>
