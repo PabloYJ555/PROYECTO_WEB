@@ -3,8 +3,7 @@
     font-family: 'FuentePerros';
     src: url('./fuente/ProtestRiot-Regular.ttf') format('truetype');
 }
-/* Media query para monitores con una anchura mínima de 1024px */
-@media screen and (min-width: 1024px) {
+
 body {
     background-color: #3f4045;
     font-family: 'FuentePerros', sans-serif;
@@ -230,7 +229,6 @@ footer h2{
     width: 20px;
     height: 20px; 
     margin-right: 2rem; 
-}
 }
    
 /* Media query para tablets con una anchura mínima y máxima de 1024px */
